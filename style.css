@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+nav {
+    /* border: 2px solid black; */
+    width: 500px;
+    justify-content: space-between;
+}
+
+.mainscetion {
+    background-color: #500d25;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+/* Navigation bar  */
+.header {
+    background-color: #500d25;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 9%;
+}
+
+div {
+    margin: 100px;
+
+}
+
+
+/* Hero section */
+.hero {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .hero-content {
+} */
+
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 20px;
+    max-width: 550px;
+}
+
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.7;
+    /* max-width: 40px; */
+    margin-bottom: 25px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.primary-btn {
+    background: #f5bd27;
+    color: #500d25;
+    margin-right: 20px;
+}
+
+.secondary-btn {
+    color: white;
+    border: 1px solid white;
+}
+
+/* 48 hours circle */
+
+.circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 8px solid #f5bd27;
+    background: #d9274b;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* rotate: 2px; */
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.circle h2 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.circle p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 5px;
+}
