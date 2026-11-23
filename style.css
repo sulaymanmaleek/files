@@ -1,14 +1,29 @@
+:root {
+    --wine: #4a0d24;
+    /* deep hibiscus: hero and dark sections */
+    --zobo: #b3173b;
+    /* bright zobo red: buttons and accents */
+    --ginger: #f0b429;
+    /* warm yellow: highlights on dark */
+    --leaf: #2f6b4f;
+    /* green: used on one card only */
+    --paper: #fcf6f4;
+    /* page background (a very light pink) */
+    --blush: #f6e4e2;
+    /* tinted section background */
+    --ink: #2a1118;
+    /* body text (never pure black) */
+
+    --font-head: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+    --font-body: "Figtree", system-ui, sans-serif;
+
+    --radius: 18px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
 }
 
 a {
@@ -18,43 +33,56 @@ a {
 }
 
 nav {
-    /* border: 2px solid black; */
     width: 500px;
     justify-content: space-between;
 }
 
+/* div {
+    margin: 120px;
+} */
+
 .mainscetion {
-    background-color: #500d25;
-    width: 100%;
-    height: 100vh;
-    color: white;
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* background: var(--wine); */
+    /* color: white; */
 }
 
-/* Navigation bar  */
+/* Navigation bar start*/
 .header {
-    background-color: #500d25;
+    background: var(--wine);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 9%;
+    /* margin: 120px; */
+    padding: 20px 8.1rem;
+    font-family: var(--font-head);
 }
 
-div {
-    margin: 100px;
+.order {
+    background-color: var(--zobo);
+    padding: 10px 20px;
+    border-radius: 18px;
 
 }
 
+/* Navigation bar stop*/
 
-/* Hero section */
+
+
+/* Hero section start*/
 .hero {
     color: white;
     display: flex;
     justify-content: space-around;
+    background: var(--wine);
+    font-family: var(--font-head);
+    /* margin: 90px 0px; */
+    width: 100%;
+    background: var(--wine);
+    padding: 90px 9px;
 }
-
-/* .hero-content {
-} */
 
 .hero-content h1 {
     font-size: 64px;
@@ -103,8 +131,8 @@ div {
     height: 320px;
     border-radius: 50%;
     border: 8px solid #f5bd27;
-    background: #d9274b;
-
+    background: var(--zobo);
+    transform: rotate(-7deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,3 +152,96 @@ div {
     line-height: 1.5;
     margin-top: 5px;
 }
+
+.container {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 15px;
+}
+
+/* Hero section stop*/
+
+/* OUR STORY SECTION START */
+
+#ourstory {
+    display: flex;
+    background-color: #fcf6f4;
+    color: #2a1118;
+    font-family: var(--font-head);
+    /* border: 2px solid black; */
+}
+
+.rightstory {
+    padding: 90px;
+    width: 60%;
+}
+
+.rightstory h1 {
+    font-size: 3rem;
+}
+
+.leftstory {
+    margin-left: 120px;
+    margin-top: 100px;
+    font-size: 1.5rem;
+}
+
+.rightstory p {
+    line-height: 1.5rem;
+}
+
+/* FLAVOURS SECTION START */
+#flavours {
+    padding: 60px 10%;
+    background-color: var(--blush);
+    font-family: Arial, sans-serif;
+}
+
+.flavour-heading {
+    margin-bottom: 40px;
+}
+
+.flavour-heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.flavour-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+}
+
+.flavour-card {
+    flex: 1 1 280px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    border-top: 13px solid #8b2635;
+}
+
+.flavour-card:nth-child(2) {
+    border-top-color: #d69b55;
+}
+
+.flavour-card:nth-child(3) {
+    border-top-color: #234d48;
+}
+
+.flavour-card h3:last-child {
+    color: #8b2635;
+    margin-top: 20px;
+}
+
+.flavour-card p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* FLAVOURS SECTION STOP */
+
+/* MADE SECTION START  */
+
+
+/* MADE SECTION STOP */
