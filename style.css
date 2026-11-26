@@ -26,6 +26,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -53,7 +57,9 @@ nav {
     background: var(--wine);
     color: white;
     display: flex;
+    position: fixed;
     justify-content: space-between;
+    width: 100vw;
     align-items: center;
     /* margin: 120px; */
     padding: 20px 8.1rem;
@@ -79,6 +85,7 @@ nav {
     background: var(--wine);
     font-family: var(--font-head);
     /* margin: 90px 0px; */
+    /* padding-top: 100px; */
     width: 100%;
     background: var(--wine);
     padding: 90px 9px;
@@ -243,5 +250,103 @@ nav {
 
 /* MADE SECTION START  */
 
+#process {
+    padding: 60px 25px;
+    background-color: var(--paper);
+    padding: 60px 10%;
+    font-family: var(--font-body);
+}
+
+#process h2 {
+    font-size: 46px;
+    font-family: var(--font-body);
+    color: var(--ink);
+    margin-bottom: 40px;
+}
+
+.process-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.process-step {
+    display: grid;
+    grid-template-columns: 60px 160px 1fr;
+    align-items: center;
+    gap: 25px;
+}
+
+.process-step span {
+    background-color: var(--wine);
+    color: var(--ginger);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.process-step h3 {
+    font-size: 22px;
+    color: var(#292536);
+}
+
+.process-step p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
 
 /* MADE SECTION STOP */
+
+/* ORDER SECTION START  */
+
+#order {
+    background-color: var(--wine);
+    padding: 50px 15px;
+    font-family: var(--font-body);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#order h1 {
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+}
+
+#order p {
+    /* font-size: 10px; */
+    padding: 10px 0px 20px 0px;
+}
+
+.btn-order {
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+    background-color: var(--zobo);
+    border: none;
+    transition: transform 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.btn-order:hover {
+    transform: translateY(-8px);
+}
+
+footer {
+    font-family: var(--font-body);
+    font-size: 14px;
+    align-items: center;
+    background-color: var(--ink);
+    padding: 20px 500px;
+    color: var(--blush);
+}
